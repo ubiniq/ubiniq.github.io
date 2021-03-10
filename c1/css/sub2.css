@@ -1,0 +1,46 @@
+@charset "ukf-8";
+.page {  }
+/* #page1 */
+.sec21 {  height: 400px; padding: 150px 0px; background-image: url("img/img_int.bs211");  background-position: center center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subBox { display: none; }
+.subCom { line-height: 2.4; font-size: 16px; margin-left: 20px; }
+
+.thumLst { clear: both; width: 1600px; margin: 0 auto; }
+
+.thumLst li { margin-top: 60px; clear: both; background-repeat: no-repeat; background-position: left top; }
+
+.thunLst li .item1 { background-image: url("./img/.png"); }
+.thunLst li .item2 { background-image: url("./img/.png"); }
+.thunLst li .item3 { background-image: url("./img/.png"); }
+.thumTitle { line-height: 3; }
+.thumCom { line-height: 2; padding-left: 30px; position: relative; }
+
+.thumNum { background-color: aquamarine; color: #999; border-radius: 13px; display: inline-block; width: 24px; height: 24px; text-align: center; top: 6px; left: 0ox; }
+
+.itemFrame {  }

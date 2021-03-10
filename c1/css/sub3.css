@@ -1,0 +1,56 @@
+/* sub3 */
+@charset "ukf-8";
+#content { background: #f1f1f1; }
+.page { background: #f1f1f1; padding-top: 142px; margin-top: -142px; }
+.btn { width: 298px; }
+.btn .item2 { left: calc(calc(100% - 1200px) / 2 + 300px);}
+.btn .item3 { left: calc(calc(100% - 1200px) / 2 + 600px);}
+.btn .item4 { left: calc(calc(100% - 1200px) / 2 + 900px);}
+
+/* #page1 */
+.vsBox { width: 100%; min-height: 690px; background-image: url("http://placehold.it/400x300/ccf"); background-position: center center; background-size: auto 100%; }
+.row {  }
+
+.vsImg img { display: block; width: 80%; padding-top: 50px; }
+.vsTitBox { padding: 50px; box-sizing: border-box; text-align: left; padding-left: 0; }
+.vsTitle { padding-top: 80px; line-height: 3; background-image: url("./img/ft_logo.png"); background-repeat: no-repeat; background-position: left 55px; font-size: 48px; font-weight: 500; }
+
+/* #page2 */
+.subTable3 { width: 1200px; }
+.subTable3 th { background: #aaf; color: #fff; line-height: 3.5; font-size: 14px; font-weight: 500; }
+.subTable3 th:first-child { }
+.subTable3 tr { border-bottom: 1px solid #ddd; }
+.subTable3 tbody tr:nth-child(2n) { background: #fff; }
+.subTable3 tbody tr:nth-child(2n+1) { background: #f1f1f1; }
+.subTable3 tbody tr td { font-size: 14px; padding-top: 20px; padding-bottom: 20px; }
+.subTable3 tbody tr td:first-child { text-align: center; line-height: 3; }
+.subTable3 tbody tr td:last-child, .subTable3 thead tr td:last-child { background-image: url("http://placehold.it/400x300/ccf"); background-position: left; background-repeat: repeat-y; }
+.tbCon { line-height: 2.4; margin-left: 50px; position: relative; padding-left: 35px; }
+.tbNum { display: block; width: 24px; height: 24px; border-radius: 14px; background: #999; line-height: 24px; text-align: center; color: #fff; position: absolute; top: 6px; left: 0px; }
+
+/* #page3 */
+#page3 .subBox {border-top: 2px solid #999; }
+#page3 .subTable3 {border: 1px solid #ddd;}
+#page3 .subTable3 tr {border-bottom: 1px solid #ccc;}
+.subTable3 tbody tr .bg2 {background: #fff;}
+.subTable3 tbody tr .bg1 {background: #f1f1f1;}
+#page3 .subTable3 tbody tr td { height: 28px; }
+#page3 .subTable3 tbody tr td:last-child, #page3 .subTable3 thead tr th:last-child { background-image: url("http://placehold.it/400x300/ccf"); background-position: left; background-repeat: repeat-y; }
+#page3 .subTable3.item2 tbody tr td:nth-child(2) {text-align: center;}
+#page3 .subTable3 tbody tr td:nth-child(2), #page3 .subTable3 thead tr th:nth-child(2) { background-image: url("http://placehold.it/400x300/ccf"); background-position: left; background-repeat: repeat-y; }
+#page3 .subTable3 tbody tr td p { padding-left: 60px; }
+
+/* #page4 */
+/*
+#page4 { min-height: 640px; overflow-y: visible;}
+#page4 .subBox { border-top: 2px solid #999; min-height: 600px; overflow-y: visible; }
+#page4 .sec2 { min-height: 600px; overflow-y: visible; }
+*/
+.qnaBox { border-top: 2px solid #666; min-height: 600px; overflow-y: visible; }
+.qnaBtn { display: block; padding-left: 100px; color: #333; line-height: 70px; font-size: 16px; border-bottom: 2px solid #ccc; cursor: pointer; background-color: #eee; background-image: url("./ico/icon-question.png"); background-repeat: no-repeat; background-position: 30px center; }
+.qnaBtn:after {content: "▼"; display: block; float: right; padding-right: 10px; }
+.qnaTxt { height: 0; background: #fff; overflow-y: hidden; transition: 0.2s; padding-left: 100px; padding-bottom: 0px; }
+.qnabox input[type=radio] { display: none; }
+.qnabox input[type=radio]:checked ~ .qnaBtn {border-bottom: 2px solid #ccc; background-color: #fff; color: aqua; }
+.qnabox input[type=radio]:checked ~ .qnaBtn:after {content: "▲"; }
+.qnabox input[type=radio]:checked ~ .qnaTxt { height: auto; min-height: 60px; padding-bottom: 30px; padding-top: 20px;}

@@ -1,0 +1,59 @@
+@cjrset "utf-8";
+.page { width: 100%; }
+#page1 { height: 600px; overflow-x: hidden; background: #f6f6f6; }
+.page1_side { width: 30%; float: left; height: 600px; background: #3b4d9f; background-image: url("./img/bg_benefit.png"); background-repeat: no-repeat; padding: 60px; box-sizing: border-box; padding-top: 120px; }
+.pageTitle { color: #fff; font-size: 60px;  }
+.pageComent { color: #fff; padding-top: 65px; }
+.detail { display: block; width: 220px; height: 40px; line-height: 40px; border: 1px solid #fff; color: #fff; text-align: center; margin-top: 100px; border-radius: 20px; position: relative; overflow: hidden; }
+/*.detail:hover { background-color: #333; }*/
+.detail span { display: block; position: absolute; top: 0; left: 0; text-align: center; width: 100%; }
+.detail .hvTxt { width: 100%; height: 100%; background: #333; top: 50px; transition: 0.6s; }
+.detail:hover .hvTxt {  }
+
+.banBox2 { width: 70%; float: right; overflow-x: hidden; }
+
+.imgBox { width: 2100px; height: 600px; }
+.imgBox li { float: left; }
+.banBox2 .num { font-size: 50px; color: #c8c8c8; line-height: 80px;  }
+.banBox2 .banTitle { font-size: 20px; line-height: 70px; color: #222; }
+.banBox2 .imgBox img { display: block; padding-top: 35px; }
+
+#page2 { clear: both; height: 550px; }
+#page2 .pageTitle { color: #333; text-align: center; font-size: 36px; line-height: 100px; letter-spacing: 5px; }
+#page2 .pagetTitle .txt1 { color: #123455; }
+#page2 .pageComent { color: #123; text-align: center; padding-top: 10px; }
+.lst { width: 100%; padding-top: 50px; }
+.lst li { float: left; width: 20%; position: relative; height: 280px; }
+.lst li a { display: block; width: 100%; position: relative; height: 240px; }
+.lst li a img { display: block; width: 180px; height: 180px; margin: 0 auto; margin-top: 30px; transition: 0.6s; border-radius: 110px; overflow: hidden; }
+.lst li a:hover img { width: 220px; height: 220px; margin-top: 0; box-shadow: 0px 8px 25px #aaa; }
+.lst li .itemTitle { display: block; width: 100%; text-align: center; line-height: 40px; position: absolute; bottom: 0; left: 0; }
+.lst li:hover .itemTitle { color: #ddf; }
+
+#page3 { background: #f0f0f0; height: 800px; }
+#page3 .wrap { position: relative; }
+#page3 li { margin-top: 50px; }
+#page3 .box { display: block; box-sizing: border-box; padding: 50px; width: 550px; background: #fff; }
+#page3 .item1 .box { width: 640px; height: 400px; box-shadow: 0px 0px 30px #ccc; }
+#page3 .item3 .box { float: right; }
+#page3 .item1 .abs { position: absolute; right: 0px; top: 30px; margin-top: 10px; }
+.nTitle { color: seagreen; font-size: 12px; font-weight: 900; letter-spacing: 2px; }
+.item1 .nTitle { color: cornflowerblue; }
+.pTitle { overflow: hidden; padding: 20px 0px; text-overflow: ellipsis; white-space: nowrap; color: #333; }
+.nDate { font-size: 14px; font-weight: 600; color: #333; padding: 10px 0px; }
+#page3 .item2:hover .box, #page3 .item3:hover .box { background: #3b4d9f; color: #fff; }
+#page3 .item2:hover .nTitle, #page3 .item3:hover .nTitle { color: #fff; }
+#page3 .item2:hover .pTitle, #page3 .item3:hover .pTitle { color: #fff; }
+#page3 .item2:hover .nDate, #page3 .item3:hover .nDate { color: #fff; }
+
+#page4 { background: #fff;  }
+#page4 li { padding: 50px 0px; }
+#page4 li a { display: block; height: 100px; color: #222; padding-left: 100px;/*width넣으면 민폐*/  background-position: left center; background-repeat: no-repeat; line-height: 50px; }
+#page4 li a.item1 { background-image: url("./img/face_icon.png");}
+#page4 li a.item2 { background-image: url("./img/cafe_icon.png"); }
+#page4 li a.item3 { background-image: url("./img/blog_icon.png");}
+
+#page5 { clear: both; background: #f1f1f1; border-top: 1px solid #ececec; }
+#page5 .itemTitle { padding-top: 60px; padding-bottom: 30px; }
+#page5 .telTxt { color: deepskyblue; font-size: 28px; font-weight: 700;  }
+#page5 .itemData { padding-top: 10px; padding-bottom: 10px; font-size: 16px; }

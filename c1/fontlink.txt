@@ -1,0 +1,6 @@
+font
+font-family: 'Noto Sans KR', sans-serif;
+
+noto serif kr
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+font-family: 'Noto Sans KR', sans-serif;

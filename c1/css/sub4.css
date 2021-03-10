@@ -1,0 +1,70 @@
+/* sub3 */
+@charset "ukf-8";
+#content { background: #f1f1f1; }
+.page { background: #f1f1f1; padding-top: 142px; margin-top: -142px; }
+.btn { width: 298px; }
+.btn .item2 { left: calc(calc(100% - 1200px) / 2 + 300px);}
+.btn .item3 { left: calc(calc(100% - 1200px) / 2 + 600px);}
+.btn .item4 { left: calc(calc(100% - 1200px) / 2 + 900px);}
+
+.subTit { line-height: 2; padding-top: 50px; padding-left: 15px; font-weight: 400; padding-bottom: 30px; }
+.subTit:before { content: ""; display: block; width: 3px; height: 30px; background: #aaf; float: left; margin-left: -15px; margin-top: 10px; clear: both; }
+
+/* #page1, #page4 */
+.sec2 { width: 100%; clear: both; min-height: 500px; padding: 40px 0px; }
+.subBox { width: 1200px; margin: 0 auto; color: #666; padding-bottom: 50px; height: auto; }
+.searchForm { width: 100%; }
+.searchForm p { text-align: right; }
+.searchKey { display: inline-block; line-height: 38px; width: 320px; height: 38px; border: 1px solid #ccc; text-indent: 20px; color: #666; }
+.submitBtn { outline: 0; border: 0; display: inline-block; width: 40px; height: 40px; color: #fff; background-color: aqua; }
+.newsLst { clear: both; width: 100%; border-top: 2px solid #666; margin-top: 60px; }
+.newsLst li { padding: 20px; min-height: 200px; border-bottom: 1px solid #ccc; }
+.newsLst li div { padding-top: 15px; padding-bottom: 30px; box-sizing: border-box; }
+.newsLst li i { font-style: normal; }
+.newsTitle { color: #333; font-size: 24px; line-height: 3; }
+.newsComent { line-height: 2; color: #444; }
+.newsLst li:last-child { border-bottom: 1px solid #999; }
+
+/* #page2 */
+.letterLst { clear: both; width: 100%; }
+.letterLst li { text-align: center; }
+.letterLst li a { display: block; text-align: center; }
+.letterLst li a img { display: block; width: 70%; margin: 0 auto; height: auto; box-shadow: 3px 3px 20px #999; }
+.letterCom { display: block; color: #333; text-align: center; line-height: 5; }
+
+/* #page3 */
+.vsBox { width: 100%; min-height: 690px; position: relative; }
+.vsImg { display: block; width: 100%; height: auto; }
+.vsTitBox { position: absolute; width: 600px; min-height: 400px; right: 200px; top: 100px; background-color: rgba(0,0,0,0.7); }
+.vsTitle { padding-top: 10px; line-height: 2.4; font-size: 48px; font-weight: 400; text-align: right; padding-right: 50px; }
+.btxt { color: aqua; }
+.vsComent { padding-top: 20px; color: #fff; text-align: right; padding-right: 50px; }
+.more { display: block; width: 160px; line-height: 32px; text-align: center; margin: 40px; border: 2px solid #fff; border-radius: 18px; color: #fff; }
+
+.picLst { clear: both; }
+.picLst li { min-height: 420px; }
+.picLst img { display: block; width: 90%; height: auto; }
+.picTit { clear: both; line-height: 2; padding-left: 30px; position: relative; margin-top: 25px; }
+.picNum { background-color: aqua; color: #fff;  }
+.sec1 { width: 100%; clear: both; min-height: auto; padding: 40px 0px; }
+.sec3 .picLst img { width: 240px; height: 166px; border-radius: 24px 24px 0px 0px; overflow: hidden; }
+.picTxt1, .picTxt2 { display: block; width: 240px; height: 44px; text-align: center; border-radius: 0px 0px 24px 24px; overflow: hidden; line-height: 44px; }
+.picTxt1 {  }
+.picTxt2 {  }
+
+
+/* #page4 */
+/*
+#page4 { min-height: 640px; overflow-y: visible;}
+#page4 .subBox { border-top: 2px solid #999; min-height: 600px; overflow-y: visible; }
+#page4 .sec2 { min-height: 600px; overflow-y: visible; }
+*/
+/*
+.qnaBox { border-top: 2px solid #666; min-height: 600px; overflow-y: visible; }
+.qnaBtn { display: block; padding-left: 100px; color: #333; line-height: 70px; font-size: 16px; border-bottom: 2px solid #ccc; cursor: pointer; background-color: #eee; background-image: url("./ico/icon-question.png"); background-repeat: no-repeat; background-position: 30px center; }
+.qnaBtn:after {content: "▼"; display: block; float: right; padding-right: 10px; }
+.qnaTxt { height: 0; background: #fff; overflow-y: hidden; transition: 0.2s; padding-left: 100px; padding-bottom: 0px; }
+.qnabox input[type=radio] { display: none; }
+.qnabox input[type=radio]:checked ~ .qnaBtn {border-bottom: 2px solid #ccc; background-color: #fff; color: aqua; }
+.qnabox input[type=radio]:checked ~ .qnaBtn:after {content: "▲"; }
+.qnabox input[type=radio]:checked ~ .qnaTxt { height: auto; min-height: 60px; padding-bottom: 30px; padding-top: 20px;}*/

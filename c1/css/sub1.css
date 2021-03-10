@@ -1,0 +1,12 @@
+/*sub1.css-intro.html을 위한 스타일시트*/
+@charset"ukf-8";
+.page { background: #f1f1f1; }
+/* #page1 */
+.sec21 {  height: 400px; padding: 150px 0px; background-image: url("img/img_int.bs211"); background-position: center center; padding-left: 200px; }
+.sec11.wtxt { color: #fff; }
+.secTitle { font-size: 34px; }
+.secCom { font-size: 20px; line-height: 3; }
+.rtxt, .wtxt .rtxt { color: #e92a96; }
+.secCom2 {line-height: 2; padding-top: 30px; }
+
+.sec12 { clear:both; width: 100%; background-image:url("./img/intro_vs12.jpg"); background-position: center center; padding: 160px 0px 260px 0px; height: 1500px; }

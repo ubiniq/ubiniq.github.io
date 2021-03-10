@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>밝은 누리 안과에 오신 것을 환영합니다</title>
+     <!--    구형브라우저-->
+    <link rel="shortcut.icon" type="image/x-icdn" href="./ico/favicon16.ico">
+<!--    신형 브라우저와 안드로이드 폰-->
+    <link rel="shortcut.icon" type="image/x-icdn" href="./ico/favicon32.png">
+<!--    아이폰3 이하-->
+    <link rel="apple-touch-icon" size="57x57" href="./ico/favicon57.png">
+<!--    아이패드-->
+    <link rel="apple-touch-icon" size="72x72" href="./ico/favicon72.png">
+    <!--    아이폰4 이상-->
+    <link rel="apple-touch-icon" size="114x114" href="./ico/favicon114.png">
+    <!--IE10 이상-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/favicon-144.png">
+
+    <!--    메타데이터 개발 공통 사항-->
+    <!--    기본 실행할 스타일 시트 지정-->
+<!-- 많이 안 씀
+    <meta http-equiv="default-style" content="phone">
+    <link rel="stylesheet" href="phone.css" title="phone">
+    <link rel="stylesheet" href="desktop.css" title="desktop">
+-->
+    <!--    자동 새로고침 초단위 설정-->
+    <meta http-equiv="refresh" content="180">
+    <!--    데스크탑에서 IE로 웹 문서를 열 때 가장 최신 버전으로 실행-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    
+    <!--    앱(웹 사이트)의 이름-->
+    <meta name="application-name" content="Nurieye hospital Site">
+    <!--    웹 사이트 저작자의 이름-->
+    <meta name="author" content="Suyeon Lee">
+    <!--    현재 문서의 설명-->
+    <meta name="description" content="Nurieye hospital Site Mainpage">
+    <!--    현재 문서의 저작도구-->
+    <meta name="generator" content="Brackts">
+    <!--    검색엔진에서 검색되게 할 키워드-->
+    <meta name="keywords" content="밝은 누리 안과 병원, 라식, 라섹, 스마일라식, 대전 안과">
+    
+    
+    
+    <!--    반응형, 모바일, 태블릿, 사이트일 경우-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+       <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+       <link rel="stylesheet" href="all.css">
+       <link rel="stylesheet" href="main.css">
+       <link rel="stylesheet" href="grid.css">
+       <link rel="stylesheet" href="sub.css">
+       <link rel="stylesheet" href="sub4.css">
+       <style>
+        body, html {-ms-overflow-style: none; }
+           ::-webkit-scrollbar {display: none; }
+           ::-o-scrollbar { display: none; }
+           ::-moz-scrollbar { display: none; }
+/*           https://cloud.google.com/mps-platform*/
+    </style>
+<!--     스크립트-->
+      <script src="./js/jquery-1.11.1.js"></script>
+      <script>
+        $(function(){
+//            var imgWd = parseInt($(".banBox2 li").width());
+//            var imgMar = parseInt($(".banBox2 li").css("margin"));
+//            var imgAni = imgWd + imgMar;
+            var intv = setInterval(function(){lAni();}, 3000);
+            function lAni(){
+                $(".imgBox").not(":animated").animate({"margin-left":"-510px"}, 600, function(){
+                    $(".imgBox li").eq(0).appendTo($(".imgBox"));
+                    $(".imgBox").css("margin-left","0px");
+                });
+            };
+        });
+        $(window).scroll(function(){
+            var scTop = $("body, html").scrollTop();
+            if(scTop>=100){
+                $(".hdFrame, #gnb a, .lstBtn span").addClass("on");
+            } else {
+                $(".hdFrame, #gnb a, .lstBtn span").removeClass("on");
+            }
+        });
+        
+    </script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCECCIaZwgpAnGZWNIF0Qfyyygrmp5vsXo"></script>-->
+
+<script src="https://maps.googleaqis.com/maps/api/js?sensor=false"> 
+
+//좌표 값을 바꿔서 입력 36.3491563,127.3776857
+
+function initialize() {
+    var myLatlng = new google.maps.LatLng(36.349273, 127.3776312);
+    var mapOptions = {
+        zoom: 17,
+        center: myLatlng
+  }
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+ 
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: '밝은누리안과'	  //레이블을 바꿔서 입력
+
+  });
+
+}
+
+ 
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+ </script>
+</head>
+<body onload="initialize()">
+   <div class="hdFrame on"></div>
+    <header id="hd">
+        <div class="wrap">
+            <a href="index.html" class="logo">
+                <img src="./img/img_logo.png" alt="앰블럼">
+            </a>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="intro.html#page1">밝은 누리</a></li>
+                    <li><a href="eye_clinic.html#page1">시력 교정</a></li>
+                    <li><a href="sub_2-2.html#page1">누리 시스템</a></li>
+                    <li><a href="notice.html#page1">병원 서비스</a></li>
+                    <li><a href="member.html#page1">고객 관리</a></li>
+                </ul>
+            </nav>
+            <label for="ck" class="lstBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+<main id="content">
+<div class="blank"></div>
+    <div class="page" id="page1">
+        <a href="#page1" class="btn1 item1">공지사항</a>
+        <div class="con">
+          <h1 class="pageTitle">공지사항</h1>
+          <section class="sec2">
+              <div class="subBox">
+                  
+              </div>
+          </section>
+       </div>
+        </div>
+        <div class="blank"></div>
+        <div class="page" id="page2">
+        <a href="#page2" class="btn1 item2">주의사항</a>
+        <div class="con">
+               <h1 class="pageTitle">주의사항</h1>
+                
+<!--            section.sec1>input[type=radio][name=ra11]#ra11.raItem.reItem1*4+ul.btnFrame>li*4>label[for=ra11]-->
+       <section class="sec2">
+          <div class="subBox">
+              
+          </div>
+       </section>
+       </div>
+        </div>
+        <div class="blank"></div>
+        <div class="page" id="page3">
+        <a href="#page3" class="btn1 item3">병원소식</a>
+        <div class="con">
+            <h1 class="pageTitle">병원소식</h1>
+              <figure class="vsBox">
+              <img src="./img/" alt="병원이벤트배너" class="vsImg">
+              <div class="vsTitBox">
+                  <h1 class="vsTitle">
+                      <img src="http://place.holdon" alt="">
+                  </h1>
+                  <p class="vsComent"></p>
+                  <a href="" class="more">사이트 바로가기</a>
+              </div>
+            </figure>
+            <section class="sec1">
+                <div class="subBox">
+                    <h2 class="subTit"></h2>
+                    <ul class="txtLst">
+                        <li class="col12">
+                            <p class="picTit">
+                            <span class="picNum">1</span>
+                            롸롸롸
+                            </p>
+                            <p class="subCom">
+                                
+                            </p>
+                        </li>
+                        <li class="col12">
+                            <p class="picTit">
+                            <span class="picNum">2</span>
+                            롸롸로라로ㅑㅏ
+                            </p>
+                            <p class="subCom">
+                                
+                            </p>
+                        </li>
+                        <li class="col12">
+                            <p class="picTit">
+                            <span class="picNum">3</span>
+                            라라라라랼ㄹ
+                            </p>
+                            <p class="subCom">
+                                
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+       </div>
+        </div>
+        <div class="blank"></div>
+        <div class="page" id="page4">
+        <a href="#page4" class="btn1 item4">자주하는 질문</a>
+        <div class="con">
+            <h1 class="pageTitle">자주하는 질문</h1>
+<!--               div.subBox>ul.qnaBox>li.item1*9>input[type=radio][name=qnaRa]#qnaRa1+label[for=qnaRa1].qnaBtn+.qnaTxt -->
+               <div class="subBox">
+                   <ul class="qnaBox">
+                       <li class="item1">
+                           <input type="radio" name="qnaRa" id="qnaRa1">
+                           <label for="qnaRa1" class="qnaBtn">
+                               검사 및 수술 전 준비사항에 대해서 알려주세요.
+                           </label>
+                           <div class="qnaTxt">시력교정수술은 만 18세 이상 되는 분께 권해드리며, 약45세 이후에는 노안, 약55세 이후에는 백내장의 가능성이 높아지므로 여러 상황을 고려하여 결정하는 것이 좋습니다. <br> 미리 인터넷 또는 전화를 통해 검사 날짜와 시간을 예약하신 후 검사 전 소프트렌즈의 경우 약 5일~1주간, 하드 렌즈는 약 10일~2주간 착용 하지 말고 눈을 최대한 편안한 상태로 만들어 오시는 것이 바람직합니다.<br> 약 2시간~ 2시간30분 정도 검사 시간이 소요되며 검사 당일은 운전이 어려우므로 대중 교통 수단을 이용해 주셔야 합니다.<br> 수술은 원하는 대로 선택할 수 없으며 수술 전 정확한 검사를 통해 가능한 수술 방법을 확인하고 눈 상태, 직업, 생활 환경, 시간적 여유 등 여러 가지 요인을 고려하여 수술 방법을 최종적으로 결정하게 됩니다.<br> 수술 전에도 마찬가지로 소프트렌즈와 하드 렌즈 사용은 위와 같이 중지 하시고 수술 전날 충분한 수면을 취하신 후 당일에는 노메이크업 상태의 편한 마음으로 오시면 됩니다.</div>
+                       </li>
+                       <li class="item2">
+                           <input type="radio" name="qnaRa" id="qnaRa2">
+                           <label for="qnaRa2" class="qnaBtn">
+                               밝은 누리 스마일 라식(누리 스마일)이란?
+                           </label>
+                           <div class="qnaTxt">밝은누리스마일라식은 로우에너지(Low Energy)21단계(105nj)를 사용합니다. 스마일 수술시 레이저의 에너지가 낮을수록 각막 절단면이 매끄럽고 부드러워서 시력의 회복이 빠르며 수술 후, 빛번짐을 최소화 하는 등 시력의 질을 한층 더 높여 줍니다. 밝은누리의 이성준 원장님께서는 스마일라식을 개발한 독일의 ZEISS로부터 탁월한 기술을 인정받아 국내에서는 유일하게 'Best Skilled SMILE Doctor'로 선정되신 분입니다. 스마일라식의 독창적인 노하우는 초고도의 난시 근시교정에도 남다른 결과를 보입니다.</div>
+                       </li>
+                       <li class="item3">
+                           <input type="radio" name="qnaRa" id="qnaRa3">
+                           <label for="qnaRa3" class="qnaBtn">
+                               라식, 라섹, 스마일 라식의 차이점은?
+                           </label>
+                           <div class="qnaTxt">기존의 라식, 라섹은 각막의 표층을 제거하거나(라섹), Flap(각막의 뚜껑)을 만든 다음(라식), 각막의 중간층을 엑시머 레이저로 태워서 교정하는 수술 방법입니다. 스마일라식은 초정밀 팸토세컨레이저(Visumax)를 사용하여 Flap을 만들지 않고 최소(2mm)의 절개창을 통해 교정량의 각막실질을 빼내는 신개념 수술방법으로 라섹과 라식의 단점을 보완한 최신 시력교정술입니다.</div>
+                       </li>
+                       <li class="item4">
+                           <input type="radio" name="qnaRa" id="qnaRa4">
+                           <label for="qnaRa4" class="qnaBtn">
+                               수술 후 언제까지 선글라스를 착용해야 하나요?
+                           </label>
+                           <div class="qnaTxt">라섹은 수술후 3~5개월 정도 자외선차단렌즈를 착용해주시는 것이 좋습니다, 자외선이 근시퇴행의 영향을 미칠 수 있음이 보고되어 있습니다. (실내에서는 착용안하셔도 됩니다.)</div>
+                       </li>
+                       <li class="item5">
+                           <input type="radio" name="qnaRa" id="qnaRa5">
+                           <label for="qnaRa5" class="qnaBtn">
+                               라식 수술 후 시력이 다시 나빠지지 않을까요?
+                           </label>
+                           <div class="qnaTxt">우리 인체는 이전 시력으로 돌아가려는 성질이 있기때문에 시력이 다시 떨어지는 경우도 있습니다. 고도근시이신 분들중에 한하여 몇년 후 근시가 진행할 수 있으며 안경을 쓴다하더라도 가벼운 도수이면 됩니다. 경도 근시(~-3.00D)의 경우 다시 나빠질 확률은 0 ~ 1% 정도, 중등도 근시(-3.00 ~ -6.00D)의 경우 1 ~ 2% 정도,고도 근시( -6.00 ~ -9.00D )의 경우 기대치만 너무 크시지만 않는다면 대부분 만족스러워 하시지만 4 ~ 5%정도는 다시 근시로 퇴행될 가능성을 가지고 있습니다. 초고도근시( -9.00D )의 경우 시력이 다시 나빠진다 하더라도 수술 전 처럼은 나빠지는 것은 아니며 상태에 따라 약물치료나 보충 교정을 권해드릴수 있습니다.</div>
+                       </li>
+                       <li class="item6">
+                           <input type="radio" name="qnaRa" id="qnaRa6">
+                           <label for="qnaRa6" class="qnaBtn">
+                               
+                           </label>
+                           <div class="qnaTxt"></div>
+                       </li>
+                       <li class="item7">
+                           <input type="radio" name="qnaRa" id="qnaRa7">
+                           <label for="qnaRa7" class="qnaBtn">
+                               
+                           </label>
+                           <div class="qnaTxt"></div>
+                       </li>
+                       <li class="item8">
+                           <input type="radio" name="qnaRa" id="qnaRa8">
+                           <label for="qnaRa8" class="qnaBtn">
+                               
+                           </label>
+                           <div class="qnaTxt"></div>
+                       </li>
+                       <li class="item9" style="">
+                           <input type="radio" name="qnaRa" id="qnaRa9">
+                           <label for="qnaRa9" class="qnaBtn">
+                               
+                           </label>
+                           <div class="qnaTxt"></div>
+                       </li>
+                   </ul>
+               </div>   
+<!--            section.sec1>input[type=radio][name=ra11]#ra11.raItem.reItem1*4+ul.btnFrame>li*4>label[for=ra11]-->
+     
+       </div>
+        </div>
+        <div class="page" id="lastpage">
+      <div class="wrap">
+          <ul>
+              <li class="col4 item1 first">
+                  <h2 class="itemTitle">밝은 누리 안과</h2>
+                  <p class="telTxt">042-485-6644</p>
+                  <p class="itemData">
+                      대전 광역시 서구 둔산동 1160번지<br> 오라클빌딩 4,5층
+                  </p>
+                    <p class="itemData">
+                      팩스번호 042-485-6645 | 대표 이성준<br>
+                      사업자번호 314-92-43223
+                  </p>
+              </li>
+              <li class="col4 item2">
+                  <h2 class="itemTitle">진료시간</h2>
+                  <p class="itemData">
+                      평일  = 오전 09:30 ~ 오후 06:30 <br>
+                      금요일 = 오전 09:30 ~ 오후 08:30(야간진료 / 수술)<br>
+                      토요일 = 오전 09:00 ~ 오후 03:00(토요일은 점심시간 없이 진료)<br>
+                      공휴일 = 오전 09:30 ~ 오후 01:00(일요일 휴진)<br>
+                      점심시간 = 오후 01:00 ~ 오후 02:00(월~금)<br>
+                      ※토요일 및 공휴일 예약 수술 진행<br>
+                  </p>
+                 
+              </li>
+              <li class="col4 item3">
+                  <h2 class="itemTitle">찾아오시는 길</h2>
+                  <p class="itemData">
+                      대중 교통 안내<br>
+                      지하철 : 시청역 하차 후 617버스 탑승 은하수 네거리 하차<br>
+                              탄방역 하차 후 706버스 탑승 은하수 네거리 하차<br>
+                      버  스 : 은하수 네거리, 타임월드 주변에서 하차 후 도보 5분<br>
+                  </p>
+                  <div id="mapFrame">
+                     <div id="map_canvas" style="width:300px; height:180px">                         
+                     </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+   </main>
+    <input type="checkbox" id="ck">
+    <div id="popFrm">
+       <label for="ck" class="closebtn">닫기</label>
+        <div class="popBox">
+            <ul class="item1">
+                <li>
+                    <h2><a href="index.html">밝은 누리</a></h2>
+                </li>
+                <li>
+                    <a href="index.html#page1">병원 소개</a>
+                </li>
+                <li>
+                    <a href="index.html#page2">의료진 소개</a>
+                </li>
+                <li>
+                    <a href="index.html#page3">시설 소개</a>
+                </li>
+                <li>
+                     <a href="index.html#page6">협약/협력 기관</a>
+                </li>
+                <li>
+                    <a href="index.html#page7">인증서</a>
+                </li>
+            </ul>
+            <ul class="item2">
+                <li>
+                    <h2><a href="">시력교정센터</a></h2>
+                </li>
+                <li>
+                    <a href="">기본</a>
+                </li>
+                <li>
+                    <a href="">업그레이드</a>
+                </li>
+                <li>
+                    <a href="">노안 교정</a>
+                </li>
+                <li>
+                    <a href="">렌즈 교정</a>
+                </li>
+            </ul>
+            <ul class="item3">
+                <li>
+                    <h2><a href="">진료 안내</a></h2>
+                </li>
+                <li>
+                    <a href="">진료 시간</a>
+                </li>
+                <li>
+                    <a href="">오시는 길</a>
+                </li>
+                <li>
+                    <a href="">수술 일정</a>
+                </li>                
+                <li>
+                    <a href="">주의사항</a>
+                </li>
+                <li>
+                    <a href="">비용 문의</a>
+                </li>
+            </ul>
+            <ul class="item4">
+                <li>
+                    <h2><a href="">누리서비스</a></h2>
+                </li>
+                <li>
+                    <a href="">공지 사항</a>
+                </li>
+                <li>
+                    <a href="">온라인 상담/예약</a>
+                </li>
+                <li>
+                    <a href="">가상 체험</a>
+                </li>
+                <li>
+                    <a href="">방문 후기</a>
+                </li>                
+            </ul>
+            <ul class="item5">
+                <li>
+                   <h2>
+                    <a href="">고객센터</a></h2>
+                </li>
+                <li>
+                    <a href="">로그인</a>
+                </li>
+                <li>
+                    <a href="">마이 차트</a>
+                </li>
+                <li>
+                    <a href="">회원정보 관리</a>
+                </li>
+                <li>
+                    <a href="">문의사항</a>
+                </li>
+                <li>
+                    <a href="">자주 묻는 질문</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <aside id="quick">
+        <div class="qwrap">
+            <ul class="top">
+               <li>
+                  <a href="qlogo">
+                   밝은 누리
+                   </a>
+               </li>
+                <li>
+                    <a href="" class="hv">로그인</a>
+                    <a href="" class="hv">마이차트</a>
+                    <a href="" class="hv">오시는 길</a>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li><a href="" class="pink">공지사항</a></li>
+                <li><a href="" class="skyblue">방문 후기</a></li>
+                <li><a href="" class="totop">TOP</a></li>
+            </ul>
+        </div>
+    </aside>
+<footer id="ft">
+    <div class="wrap">
+        <p class="copyright">COPYRIGHTⓒ 2011.NURIEYE Ophthalmic CLINIC ALL RIGHTS RESERVED.</p>
+        <div class="ftLogo"></div>
+    </div>
+</footer>
+</body>
+</html>

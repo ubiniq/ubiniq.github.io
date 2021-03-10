@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    * { margin: 0; padding: 0; }
+    ul { list-style: none; }
+    .sec21 { border: 1px solid #333; margin: 0 auto; width: 1600px; }
+    .btnFrame { width: 100%; clear: both;  }
+    .btnFrame li { width: 33.33333%; float: left;}
+    .btnFrame li label { display: block; line-height: 40px; text-align: center; cursor: pointer;}
+    #ra21:checked ~ .btnFrame .item1 label {background: #333; color: #fff; } 
+    #ra22:checked ~ .btnFrame .item2 label {background: #333; color: #fff; }
+    #ra23:checked ~ .btnFrame .item3 label {background: #333; color: #fff; }
+    .imgFrame .ra { display: none; width: 100%; height: 600px; }
+    #ra21:checked ~ .imgFrame .item1 {display: block;}
+    #ra22:checked ~ .imgFrame .item2 {display: block;}
+    #ra23:checked ~ .imgFrame .item3 {display: block;}
+    
+    .raItem { display: none; }
+    </style>
+<body>
+    
+    <section class="sec21">
+    <input type="radio" name="raItem1" class="raItem" id="ra21" checked>
+    <input type="radio" name="raItem1" class="raItem" id="ra22">
+    <input type="radio" name="raItem1" class="raItem" id="ra23">
+    <ul class="btnFrame">
+        <li class="item"><label for="ra21" class="ra">01</label></li>
+        <li class="item"><label for="ra22" class="ra">02</label></li>
+        <li class="item" ><label for="ra23" class="ra">03</label></li>
+    </ul>
+    <ul class="imgFrame">
+        <li class="item1">
+            <div class="conData">
+                <p>기호 1번 이수연</p>
+            </div>
+        </li>
+        <li class="item2">
+            <div class="conData">
+                <p>기호 2번 이미선</p>
+            </div>
+        </li>
+        <li class="item3">
+            <div class="conData">
+                <p>기호 3번 이화수</p>
+            </div>
+        </li>
+    </ul>
+    </section>
+</body>
+</html>
