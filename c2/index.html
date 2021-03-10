@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>::: 한화 그룹에 오신 것을 환영합니다. :::</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon16.ico">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon32.png">
+    
+    <link rel="apple-touch-icon" size="57x57" href="./img/favicon57.png">
+    
+    <link rel="apple-touch-icon" size="72x72" href="./img/favicon72.png">
+    
+    <link rel="apple-touch-icon" size="114x114" href="./img/favicon114.png">
+    
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./img/favicon144.png">
+    <!--    데스크탑에서 IE로 웹 문서를 열 때 가장 최신 버전으로 실행-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <!--    앱(웹 사이트)의 이름-->
+    <meta name="application-name" content="HANWHA Holdings Site">
+    <!--    웹 사이트 저작자의 이름-->
+    <meta name="author" content="Sy Lee">
+    <!--    현재 문서의 설명-->
+    <meta name="description" content="HANWHA Holdings Site Mainpage">
+    <!--    현재 문서의 저작도구-->
+    <meta name="generator" content="Brackts">
+    <!--    검색엔진에서 검색되게 할 키워드-->
+    <meta name="keywords" content="한화, 주식회사, 한화그룹">
+    <!--  뷰포트-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0, user-=scalable=no">
+<!--    [if lt IE 9]>
+  <script src="./js/html5shiv.js></script>
+  <script>
+      //인터넷 익스플로러 9미만인 경우
+  </script>
+  <[endif]-->
+<!--   [if gte IE 9>
+   <script>
+       //인터넷 익스플로러 9이상인 경우
+    </script>
+    <[endif]-->
+    
+    <link rel="stylesheet" href="normalize.css">
+<!--    사용 폰트 연결-->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Nanum+Gothic|Nanum+Myeongjo|Noto+Sans+KR|Noto+Serif+KR" rel="stylesheet">  
+   <link rel="stylesheet" href="all.css">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="form.css"> 
+    <style>
+/*
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Nanum Brush script', cursive;
+        font-family: 'Noto Serif KR', serif;
+*/
+        
+        #page1 { background: url("./img/page1-bgimg.jpg");}
+        #page1 .pageWrap { position: absolute; top: 0px; left: calc(50% - 800px);}
+        .videoWrap { width: 100%; height: 100%; overflow: hidden; }
+        .videoWrap video { display: block; width: auto; height: 100%; min-height: 1080px; }
+        .page { position: relative; }
+        .pageWrap { width: 1600px; margin: 0 auto; }
+        .subBox1 { clear: both; display: block; float: left; }
+        .subBox2 { display: block; float: left; }
+        .subTit { color: #fff; font-size: 60px; padding-top: 400px; }
+        .subCom { color: #fff; }
+        
+        #search { clear: both; padding-top: 60px; }
+        #keyW { border: 0; outline: 0; background: #fff; display: block; width: 500px; line-height: 60px; text-indent: 30px; float: left; }
+        .frmBtn { display: block; outline: 0; border: 0; width: 62px; height: 62px; line-height: 58px; background-image: url("./img/keyBtn.png"); background-repeat: no-repeat; background-position: center center; }
+        .searchBtn { background-image: url("./img/keyBtn.png")}
+        
+        
+        .thumBox { clear: both; position: absolute; right: 250px; top: 700px; width: 600px; height: 200px; }
+        .thumBox li { clear: both; display: block; position: relative; float: left; width: 200px; height: 200px; overflow: hidden; }
+        .thumBox li a { display: block; width: 200px; text-align: center; }
+        .thumBox li .offBox, .thumBox li .onBox { width: 200px; height: 200px; clear: both; }
+        .thumBox li .onBox { display: none; background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; overflow: hidden; }
+        .thumBox li:hover .onBox { display: block; }
+        .thumBox li .offBox { display: block; }
+        .thumBox li:hover .offBox { display: none; }
+        .thumBox li .offBox .txt1 { color: #fff; }
+        .thumBox li .offBox .txt1:before { content: none; display: block; width: 58px; height: 55px; clear: both; margin: 20px auto; background-position: center center; background-repeat: no-repeat; }
+        .thumBox li .item1 .offBox .txt1:before { background-image: url("./img/quickicon_business.png"); }
+        .thumBox li .item2 .offBox .txt1:before { background-image: url("./img/quickicon_inven.png"); }
+        .thumBox li .item3 .offBox .txt1:before { background-image: url("./img/quickicon_employee.png"); }
+        .thumBox li .offBox .txt1:after { background-image: url("./img/"); display: block; content: ""; background-position: center center; background-repeat: no-repeat; margin: 20px auto; width: 28px; height: 28px; clear: both; }
+        .thumBox li .item1 .onBox { background-image: url("./img/"); }
+        .thumBox li .item2 .onBox { background-image: url("./img/"); }
+        .thumBox li .item3 .onBox { background-image: url("./img/"); }
+        
+/*        page2*/
+        #page2 { background-image: url("./img/img/")}
+        .more { display: inline-block; padding: 30px; border: 2px solid #fff; margin-top: 20px; border-radius: 40px; color: #fff; padding-right: 30px; }
+        .more:after { content: ""; display: inline-block; width: 30px; height: 10px; background-image: url(""); }
+        #page2 {background-image: ; background-size: 125% 125%; opacity: 0.9; transition: 1s; transition-delay: 0.2s; }
+        #page3 {background-image: ; background-size: 125% 125%; opacity: 0.9; transition: 1s; transition-delay: 0.2s; }
+        #page2:hover, #page3:hover {background-size: 100% 100%; opacity: 1; }
+        .comentBox {width: 450px; border-radius: 0px 0px 0px 100px; height: 250px; background-color: ; margin-top: 50px; }
+        .num {  }
+        
+        .col3 { display: block; float: left; width: 285px; margin-right: 20px; }
+        .col3.first { clear: both; }
+        .col3.last { margin-right: 0px; }
+        .col6 { width: 590px; margin-right: 20px; float: left; }
+        #page4 .pageTitle { background-image: url(""); color: #333; }
+        #page4 .pageComent { color: #333; }
+        .row { clear: both; }
+        .row a { color: #333; }
+        .row .wtxt { color: #fff; }
+        .row.one { height: 320px; margin-top: 30px; }
+        .row.two { height: 225px; margin-top: 30px; }
+        .curBox a {display: block; padding: 35px; }
+        .hvBox, .hvBox2, .hvBox3 { display: block; padding: 35px; }
+        .curTit { font-size: 28px; line-height: 60px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+        .notiTit { overflow: hidden; white-space: normal; line-height: 1.2; height: 3.6em; word-wrap: break-word; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient:vertical;}
+        .date { }
+        
+
+    </style>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+</head>
+<body>
+    <header class="hd">
+        <div class="hdWrap">
+            <a href="index.html" class="logo">로고</a>
+            <nav id="gnb">
+                <ul>
+                    <li class="gnbItem">
+                        <a href="intro.html" class="gnbDep1">한화 소개</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="intro.html">한화 소개</a>
+                            </li>
+                            <li>
+                                <a href="intro.html#page1">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="intro.html#page2">한화 역사</a>
+                            </li>
+                            <li>
+                                <a href="intro.html#page3">한화 스토리</a>
+                            </li>
+                            <li>
+                                <a href="intro.html#page4">한화 브랜드</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnbItem">
+                        <a href="business.html" class="gnbDep1">사업 분야</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="business.html">그룹사 현황</a>
+                            </li>
+                            <li>
+                                <a href="business.html#page1">제조 / 건설</a>
+                            </li>
+                            <li>
+                                <a href="business.html#page2">금융</a>
+                            </li>
+                            <li>
+                                <a href="business.html#page3">서비스 / 레저</a>
+                            </li>
+                            <li>
+                                <a href="business.html#page4">글로벌</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnbItem">
+                        <a href="promotion.html" class="gnbDep1">홍보 센터</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="promotion.html">보도 센터</a>
+                            </li>
+                            <li>
+                                <a href="promotion.html#page1">영상 뉴스</a>
+                            </li>
+                            <li>
+                                <a href="promotion.html#page2">소셜 미디어</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnbItem">
+                        <a href="employ.html" class="gnbDep1">인재 채용</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="employ.html">한화 인재상</a>
+                            </li>
+                            <li>
+                                <a href="employ.html#page1">채용 정보</a>
+                            </li>
+                            <li>
+                                <a href="employ.html#page2">한화 인재 경영</a>
+                            </li>
+                            <li>
+                                <a href="employ.html#page3">한화 인재 경영원</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>    
+            <nav id="topNav">
+                <ul>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="index-eng.html">ENG</a>
+            </li>
+        </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page" id="page1" data-val="0">
+        <div class="videoWrap">
+            <video autoplay loop muted>
+                <source src="./vdo/video1.mp4" type="video/mp4">
+                <source src="./vdo/video1.ogg" type="video/ogg">
+                <source src="./vdo/video1.webm" type="video/webm">
+            </video>
+        </div>
+        <div class="pageWrap">
+            <div class="subBox1 frmW70">
+                <h1 class="subTit">어제보다 더 나은 오늘,<br>        오늘보다 더 큰 내일!</h1>
+                <p class="subCom"></p>
+                <form action="" id="search">
+                    <input type="text" id="keyW" placeholder="검색어를 입력해주세요." autofocus name="keyW">
+                    <input type="submit" class="frmBtm searchBtn" value="">
+                </form>
+            </div>            
+        </div>
+        <ul class="thumBox">
+            <li>
+                <a href="" class="item1">
+                    <div class="offBox">
+                        <span class="txt1">사업 정보</span>
+                    </div>
+                    <dix class="onBox"></dix>
+                </a>
+            </li>
+            <li>
+               <a href="" class="item2">
+                    <div class="offBox">
+                        <span class="txt1">투자 정보</span>
+                    </div>
+                    <dix class="onBox"></dix>
+                </a>
+            </li>
+            <li>
+                <a href="" class="item3">
+                    <div class="offBox">
+                        <span class="txt1">채용 정보</span>
+                    </div>
+                    <dix class="onBox"></dix>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page" id="page2" data-val="1">
+        <div class="pageWrap">
+            <div class="titBox">
+                <h1 class="pageTitle"></h1>
+                <p class="pageComent"></p>
+            </div>
+            <a href="" class="more"></a>
+            <div class="comentBox">
+                <span class="num"></span>
+                <p class="coment"></p>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="page3" data-val="2">
+        <div class="pageWrap">
+            <div class="titBox">
+                <h1 class="pageTitle"></h1>
+                <p class="pageComent"></p>
+            </div>
+            <a href="" class="more"></a>
+            <div class="comentBox">
+                <span class="num"></span>
+                <p class="coment"></p>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="page4" data-val="3">
+        <div class="pageWrap">
+            <ul>
+                <li class="col3">
+                    <div class="titBox">
+                        <h1 class="pageTit"></h1>
+                        <p class="pageComent"></p>
+                    </div>
+                </li>
+                <li class="col6">
+                    <div class="notiBox">
+                        <h2 class="notiTit wTit">한화, 다보스에서 '무한기업'으로 나아갈 방향 모색</h2>
+                        <p class="date wTit"></p>
+                    </div>
+                </li>
+                <li class="col3">
+                    <div class="notiBox ">
+                        <h2 class="notiTit wTit">한화큐셀 유럽 6년 연속, 호주 4년 연속 태양광 톱 브랜드 선정</h2>
+                        <p class="date wTit"></p>
+                    </div>
+                </li>
+                <li class="col3">
+                    <div class="notiBox">
+                        <a href="">
+                            <h3 class="notiTit"></h3>
+                            <p class="date"></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col3">
+                    <div class="notiBox">
+                        <a href="">
+                            <h3 class="notiTit">(주)한화, 인도네시아에 원관 생상 플랜트 수출</h3>
+                            <p class="date"></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col3">
+                    <div class="notiBox">
+                        <a href="">
+                            <h3 class="notiTit">한화그룹, 명절 전 협력사 대금조기지급 등 설 맞이 이웃사랑 상생경영활동 펼쳐</h3>
+                            <p class="date"></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col3">
+                    <div class="notiBox">
+                        <h3 class="notiTit">SNS</h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="카페">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--
+    div.page#page2>div.pageWrap>(div.titBox>h1.pageTitle+p.pageComent)+(a.more)+(div.comentBox>span.num+p.coment)
+    div.page#page3>div.pageWrap>
+-->
+<footer class="ft">
+                <div class="ftWrap">
+                    <a href="" class="logo"></a>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="fgf">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index_1.html" class="fgf">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index_2.html" class="fgf">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index_3.html" class="fgf">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index_4.html" class="fgf">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftbottom">
+                    <p class="copyright"></p>
+                    <ul>
+                        <li>
+                            <a href="">개인정보처리방법</a>
+                        </li>
+                        <li>
+                            <a href="">바로가기</a>
+                        </li>
+                        <li>
+                            <a href="">사이트맵</a>
+                        </li>
+                        <li>
+                            <a href="">context us</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <section id="quick">
+                <a data-val="0" class="pageMove on">
+                    <span class="qtxt">한화의 가치</span>
+                    <span class="qbtn"></span>
+                </a>
+                <a data-val="1" class="pageMove">
+                    <span class="qtxt">한화 사업분야</span>
+                    <span class="qbtn"></span>
+                </a>
+                <a data-val="2" class="pageMove">
+                    <span class="qtxt">한화 문화활동</span>
+                    <span class="qbtn"></span>
+                </a>
+                <a data-val="3" class="pageMove">
+                    <span class="qtxt">한화 소식</span>
+                    <span class="qbtn"></span>
+                </a>                   
+            </section>
+            <button id="quick_up" class="scrollBtn">▲</button>
+            <button id="quick_down" class="scrollBtn">▼</button>
+</body>
+</html>

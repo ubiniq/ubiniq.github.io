@@ -1,0 +1,10 @@
+@charset "utf-8";
+#gnb li.gnbItem { float: left; line-height: 36px; text-align: center; }
+#gnb a.gnbDep1 { color: #fff; font-size: 18px;}
+.hd:hover #gnb a.gnbDep1 { color: #333; }
+#gnb a.gnbDep1:after { content: ""; display: block; clear: both; width: 100%; height: 3px; padding-bottom: 22px;  }
+#gnb a.gnbDep1:hover::after {border-bottom: 3px solid #333; }
+.sub { display: block; height: auto;  text-align: center; background: rgba(255,255,255,0.6);  }
+.sub li { clear: both; line-height: 36px; }
+.sub li a { display: block; line-height: 36px; color: #444; }
+#gnb:hover .sub { display: block; }
